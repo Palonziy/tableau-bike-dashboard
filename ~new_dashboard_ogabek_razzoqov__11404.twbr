@@ -1,0 +1,2031 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xml:base='https://haproxy-traffic-splitter' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents?rev=1.0' id='BI_assignment_dashboard' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='axis'>
+      <format attr='line-visibility' value='off' />
+      <format attr='tick-color' value='#f5f5f500' />
+    </style-rule>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='zeroline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Accidents (Austin Bike Accidents)' inline='true' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Austin Bike Accidents' name='excel-direct.0qvmvg61acy2i913lytjb1p8m5gx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0qvmvg61acy2i913lytjb1p8m5gx' name='Accidents' table='[Accidents$]' type='table'>
+          <columns gridOrigin='A1:S2862:no:A1:S2862:0' header='yes' outcome='2'>
+            <column datatype='string' name='Crash ID' ordinal='0' />
+            <column datatype='datetime' name='Date/Time' ordinal='1' />
+            <column datatype='string' name='Helmet Damage' ordinal='2' />
+            <column datatype='string' name='Ethnicity' ordinal='3' />
+            <column datatype='string' name='Weather Condition' ordinal='4' />
+            <column datatype='string' name='Active School Zone' ordinal='5' />
+            <column datatype='boolean' name='At Intersection' ordinal='6' />
+            <column datatype='string' name='Crash Severity' ordinal='7' />
+            <column datatype='string' name='Weekday' ordinal='8' />
+            <column datatype='real' name='Latitude' ordinal='9' />
+            <column datatype='real' name='Longitude' ordinal='10' />
+            <column datatype='integer' name='Speed Limit' ordinal='11' />
+            <column datatype='string' name='Surface Condition' ordinal='12' />
+            <column datatype='string' name='Charge' ordinal='13' />
+            <column datatype='integer' name='Person Age' ordinal='14' />
+            <column datatype='string' name='Gender' ordinal='15' />
+            <column datatype='integer' name='Deaths' ordinal='16' />
+            <column datatype='integer' name='Not Injured' ordinal='17' />
+            <column datatype='integer' name='Injuries' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S2862:no:A1:S2862:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Crash ID]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Crash ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date/Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date/Time]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Date/Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Helmet Damage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Helmet Damage]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Helmet Damage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ethnicity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ethnicity]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Ethnicity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weather Condition]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Weather Condition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active School Zone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Active School Zone]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Active School Zone</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>At Intersection</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[At Intersection]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>At Intersection</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash Severity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Crash Severity]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Crash Severity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weekday]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Weekday</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speed Limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Speed Limit]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Speed Limit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surface Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Surface Condition]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Surface Condition</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Charge</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Charge]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Charge</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Person Age]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Person Age</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not Injured</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not Injured]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Not Injured</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Injuries]</local-name>
+            <parent-name>[Accidents]</parent-name>
+            <remote-alias>Injuries</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+      <column datatype='datetime' name='[Date/Time]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='None' caption='AGE' datatype='integer' name='[Person Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Person Age]' peg='0' size='5' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Person Age]' role='dimension' type='ordinal' />
+      <column aggregation='None' caption='SPEED LIMIT' datatype='integer' name='[Speed Limit (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Speed Limit]' peg='0' size='5' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Speed Limit]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+      <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+      <column-instance column='[Date/Time]' derivation='Month' name='[mn:Date/Time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date/Time]' derivation='Quarter' name='[qr:Date/Time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date/Time]' derivation='Quarter-Trunc' name='[tqr:Date/Time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date/Time]' derivation='Year' name='[yr:Date/Time:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/tableau-temp/TEMP_0pakap40eeolei1h8h62q0tycqqt.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/07/2024 02:21:09 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Accidents (Austin Bike Accidents)' increment-value='%null%' refresh-type='create' rows-inserted='2063' timestamp-start='2024-11-07 14:21:09.345' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Crash ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crash ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crash ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1877</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date/Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date/Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date/Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Accidents</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1877</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Helmet Damage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Helmet Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Helmet Damage</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ethnicity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather Condition</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Active School Zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Active School Zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Active School Zone</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>At Intersection</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[At Intersection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>At Intersection</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Accidents</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crash Severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crash Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crash Severity</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekday</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weekday]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekday</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Accidents</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1249</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Accidents</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1239</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Speed Limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Speed Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Speed Limit</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Accidents</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Surface Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Surface Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Surface Condition</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Charge</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Charge</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Person Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Person Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Person Age</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Accidents</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Accidents</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Accidents</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not Injured</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not Injured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not Injured</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Accidents</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Injuries</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Accidents</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[Person Age]' filter-group='2'>
+          <groupfilter expression='[Person Age]&gt;=0 AND [Person Age]&lt;=75' function='filter' user:ui-marker='filter-by'>
+            <groupfilter function='level-members' level='[Person Age]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </groupfilter>
+        </filter>
+        <filter class='quantitative' column='[Speed Limit]' filter-group='2' included-values='in-range'>
+          <min>0</min>
+        </filter>
+        <filter class='categorical' column='[none:Crash Severity:nk]'>
+          <groupfilter function='level-members' level='[none:Crash Severity:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Ethnicity:nk]'>
+          <groupfilter function='level-members' level='[none:Ethnicity:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Gender:nk]'>
+          <groupfilter function='level-members' level='[none:Gender:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Helmet Damage:nk]'>
+          <groupfilter function='level-members' level='[none:Helmet Damage:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Surface Condition:nk]'>
+          <groupfilter function='level-members' level='[none:Surface Condition:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Weather Condition:nk]'>
+          <groupfilter function='level-members' level='[none:Weather Condition:nk]' />
+        </filter>
+        <filter class='categorical' column='[none:Weekday:nk]'>
+          <groupfilter function='level-members' level='[none:Weekday:nk]' />
+        </filter>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;FEMALE&quot;</bucket>
+            </map>
+            <map to='#519c51'>
+              <bucket>&quot;MALE&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;UNKNOWN&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tqr:Date/Time:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2013-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2021-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2012-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2020-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2016-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2021-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>#2015-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2014-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2021-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2014-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2019-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2012-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2018-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>#2020-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2016-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2012-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2020-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2013-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2018-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2020-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2021-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2015-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2015-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2016-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2016-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2014-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2019-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2013-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2018-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2013-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2015-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2014-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2019-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2012-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-10-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:Date/Time:ok]' palette='green_10_0' type='palette'>
+            <map to='#67af5c'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#83c976'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2015</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[qr:Date/Time:ok]' palette='green_10_0' type='palette'>
+            <map to='#67af5c'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#83c976'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2015</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[mn:Date/Time:ok]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#26743d'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#2d7f41'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#3b8a4a'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#48954f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#56a052'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#63ab59'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#6fb663'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#7cc26f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#83c976'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#8ace7b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#9bd78a'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>2015</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <filter class='categorical' column='[Person Age]' filter-group='2'>
+        <groupfilter expression='[Person Age]&gt;=0 AND [Person Age]&lt;=75' function='filter' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[Person Age]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='quantitative' column='[Speed Limit]' filter-group='2' included-values='in-range'>
+        <min>0</min>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='Accidents' id='Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D'>
+            <properties context=''>
+              <relation connection='excel-direct.0qvmvg61acy2i913lytjb1p8m5gx' name='Accidents' table='[Accidents$]' type='table'>
+                <columns gridOrigin='A1:S2862:no:A1:S2862:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Crash ID' ordinal='0' />
+                  <column datatype='datetime' name='Date/Time' ordinal='1' />
+                  <column datatype='string' name='Helmet Damage' ordinal='2' />
+                  <column datatype='string' name='Ethnicity' ordinal='3' />
+                  <column datatype='string' name='Weather Condition' ordinal='4' />
+                  <column datatype='string' name='Active School Zone' ordinal='5' />
+                  <column datatype='boolean' name='At Intersection' ordinal='6' />
+                  <column datatype='string' name='Crash Severity' ordinal='7' />
+                  <column datatype='string' name='Weekday' ordinal='8' />
+                  <column datatype='real' name='Latitude' ordinal='9' />
+                  <column datatype='real' name='Longitude' ordinal='10' />
+                  <column datatype='integer' name='Speed Limit' ordinal='11' />
+                  <column datatype='string' name='Surface Condition' ordinal='12' />
+                  <column datatype='string' name='Charge' ordinal='13' />
+                  <column datatype='integer' name='Person Age' ordinal='14' />
+                  <column datatype='string' name='Gender' ordinal='15' />
+                  <column datatype='integer' name='Deaths' ordinal='16' />
+                  <column datatype='integer' name='Not Injured' ordinal='17' />
+                  <column datatype='integer' name='Injuries' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+      <datasources>
+        <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+        <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+        <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]'>
+        <groupfilter function='level-members' level='[none:Crash Severity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]'>
+        <groupfilter function='level-members' level='[none:Ethnicity:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]'>
+        <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]'>
+        <groupfilter function='level-members' level='[none:Helmet Damage:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]'>
+        <groupfilter function='level-members' level='[none:Surface Condition:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]'>
+        <groupfilter function='level-members' level='[none:Weather Condition:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]'>
+        <groupfilter function='level-members' level='[none:Weekday:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Accidents by Age'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119090?rev=' id='AccidentsbyAge' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='AGE' datatype='integer' name='[Person Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Person Age]' peg='0' size='5' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Person Age]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Age (bin)]' derivation='None' name='[none:Person Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]' scope='cols' value='false' />
+            <format attr='width' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' value='64' />
+            <encoding attr='space' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]' field-type='quantitative' max='74.0' min='-4.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' scope='rows' value='ACCIDENTS' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#2ecc71' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]</rows>
+        <cols>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[Person Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0C3B2921-C3AD-4453-8A86-AB1965C95A1B}' />
+    </worksheet>
+    <worksheet name='Accidents by Quarter'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119094?rev=' id='AccidentsbyQuarter' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Date/Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date/Time]' derivation='Quarter-Trunc' name='[tqr:Date/Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[tqr:Date/Time:qk]' scope='cols' value='' />
+            <format attr='height' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[tqr:Date/Time:qk]' value='32' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]' value=' Gender'>
+              <formatted-text>
+                <run> Gender</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]' value=' Weekday'>
+              <formatted-text>
+                <run> Weekday</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]' value=' Weather Condition'>
+              <formatted-text>
+                <run> Weather Condition</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]' value=' Surface Condition'>
+              <formatted-text>
+                <run> Surface Condition</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]' value=' Helmet Damage'>
+              <formatted-text>
+                <run> Helmet Damage</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]' value=' Ethnicity'>
+              <formatted-text>
+                <run> Ethnicity</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]' value=' Crash Severity'>
+              <formatted-text>
+                <run> Crash Severity</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-field' value='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[tqr:Date/Time:qk]' />
+                <format attr='mark-color' value='#2ecc71' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]</rows>
+        <cols>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[tqr:Date/Time:qk]</cols>
+      </table>
+      <simple-id uuid='{6E82A0C0-129E-40E0-BA7F-84E304FABB00}' />
+    </worksheet>
+    <worksheet name='Accidents by Speed'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119091?rev=' id='AccidentsbySpeed' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='SPEED LIMIT' datatype='integer' name='[Speed Limit (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Speed Limit]' peg='0' size='5' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Speed Limit]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Speed Limit (bin)]' derivation='None' name='[none:Speed Limit (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' value='58' />
+            <encoding attr='space' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]' field-type='quantitative' max='70.0' min='-5.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' scope='cols' value='ACCIDENTS' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#2ecc71' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]</rows>
+        <cols>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]</cols>
+        <show-full-range>
+          <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[Speed Limit (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E61F16E1-0E1F-4E86-91F0-E27355A6AEFE}' />
+    </worksheet>
+    <worksheet name='Age vs Speed'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119092?rev=' id='AgevsSpeed' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='AGE' datatype='integer' name='[Person Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Person Age]' peg='0' size='5' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Person Age]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='SPEED LIMIT' datatype='integer' name='[Speed Limit (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Speed Limit]' peg='0' size='5' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Speed Limit]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Age (bin)]' derivation='None' name='[none:Person Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Speed Limit (bin)]' derivation='None' name='[none:Speed Limit (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]' value='64' />
+            <encoding attr='space' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]' field-type='quantitative' max='74.0' min='-4.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='height' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]' value='58' />
+            <encoding attr='space' class='0' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]' field-type='quantitative' max='70.0' min='-5.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-transparency' value='206' />
+                <format attr='mark-color' value='#2ecc71' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Speed Limit (bin):qk]</rows>
+        <cols>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Person Age (bin):qk]</cols>
+      </table>
+      <simple-id uuid='{DE5A5B05-37F5-40A1-9B42-F3EF48F6CF8D}' />
+    </worksheet>
+    <worksheet name='Death by year'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <repository-location id='Deathbyyear' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Date/Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column-instance column='[Date/Time]' derivation='Month' name='[mn:Date/Time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[mn:Date/Time:ok]' value='53' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[sum:Deaths:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2ecc71' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[sum:Deaths:qk]</rows>
+        <cols>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[mn:Date/Time:ok]</cols>
+      </table>
+      <simple-id uuid='{6439B547-6273-4701-86C2-055B3A3D92AE}' />
+    </worksheet>
+    <worksheet name='Total Accidents'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119093?rev=' id='TotalAccidents' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+            <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+            <column caption='Accidents' datatype='table' name='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]</column>
+            <column>[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#2ecc71' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffff7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'><![CDATA[<[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]>]]></run>
+                <run>&#10;ACCIDENTS</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{01670385-6533-4E15-BB62-E7087A8FC41C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents/108119095?rev=' id='Dashboard1' path='/workbooks/BI_assignment_dashboard' revision='' />
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1600' minheight='800' minwidth='1600' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Accidents (Austin Bike Accidents)' name='federated.0ntl0jk1qfwi4h17gon110n42s2r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ntl0jk1qfwi4h17gon110n42s2r'>
+        <column datatype='string' name='[Crash Severity]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Ethnicity]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Helmet Damage]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Surface Condition]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Weather Condition]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+        <column-instance column='[Crash Severity]' derivation='None' name='[none:Crash Severity:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Ethnicity]' derivation='None' name='[none:Ethnicity:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Helmet Damage]' derivation='None' name='[none:Helmet Damage:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Surface Condition]' derivation='None' name='[none:Surface Condition:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weather Condition]' derivation='None' name='[none:Weather Condition:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='14' param='horz' type-v2='layout-flow' w='99000' x='500' y='1000'>
+            <zone h='98000' id='12' type-v2='layout-basic' w='99000' x='500' y='1000' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='100000' id='3' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone fixed-size='46' forceUpdate='true' h='5750' id='4' is-fixed='true' type-v2='text' w='99874' x='63' y='125'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='20'>Austin Bike Accidents</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#ffff7f' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='2' h='250' id='5' is-fixed='true' type-v2='empty' w='99874' x='63' y='5875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#000000' />
+            </zone-style>
+          </zone>
+          <zone h='93750' id='6' param='horz' type-v2='layout-flow' w='99874' x='63' y='6125'>
+            <zone h='93750' id='8' param='vert' type-v2='layout-flow' w='39186' x='63' y='6125'>
+              <zone h='43625' id='9' name='Accidents by Age' show-title='false' w='39186' x='63' y='6125'>
+                <layout-cache minheight='100' minwidth='164' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='393' h='50125' id='10' is-fixed='true' name='Age vs Speed' show-title='false' w='39186' x='63' y='49750'>
+                <layout-cache minheight='158' minwidth='164' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='background-color' value='#e6e6e6' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='696' h='93750' id='16' is-fixed='true' param='vert' type-v2='layout-flow' w='43500' x='39249' y='6125'>
+              <zone fixed-size='150' h='19750' id='18' is-fixed='true' name='Accidents by Quarter' show-title='false' w='43500' x='39249' y='6125'>
+                <layout-cache minheight='132' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25375' id='31' name='Death by year' show-title='false' w='43500' x='39249' y='25875'>
+                <layout-cache fixed-size-w='686' minheight='125' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='381' h='48625' id='26' is-fixed='true' name='Accidents by Speed' show-title='false' w='43500' x='39249' y='51250'>
+                <layout-cache minheight='158' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='background-color' value='#e6e6e6' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='275' h='93750' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='17188' x='82749' y='6125'>
+              <zone fixed-size='90' h='12250' id='17' is-fixed='true' name='Total Accidents' show-title='false' w='15938' x='83374' y='7375'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffff7f' />
+                </zone-style>
+              </zone>
+              <zone h='7625' id='27' type-v2='text' w='15938' x='83374' y='19625'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='18'>FILTERS</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='25' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]' type-v2='filter' w='15938' x='83374' y='27250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='22' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]' type-v2='filter' w='15938' x='83374' y='35732'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='21' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]' type-v2='filter' w='15938' x='83374' y='44214'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='20' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]' type-v2='filter' w='15938' x='83374' y='52696'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='19' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]' type-v2='filter' w='15938' x='83374' y='61178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='24' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]' type-v2='filter' w='15938' x='83374' y='69660'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='23' mode='checkdropdown' name='Accidents by Quarter' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]' type-v2='filter' w='15938' x='83374' y='78142'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='4000' id='29' type-v2='empty' w='15938' x='83374' y='86624'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='32' h='5000' id='30' is-fixed='true' type-v2='text' w='15938' x='83374' y='90624'>
+                <formatted-text>
+                  <run fontcolor='#898989' fontsize='8'>Data Source: City of Austin</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#898989' fontsize='8'>Created by: Next-Level Tableau</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3001' id='32' name='Death by year' pane-specification-id='0' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[yr:Date/Time:ok]' type-v2='color' w='15938' x='83374' y='95624'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='padding' value='10' />
+                <format attr='background-color' value='#ffff7f' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#d4d4d4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='2625' id='28' type-v2='dashboard-object' w='2000' x='97813' y='96750'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{0EE8834E-1629-43EF-B83B-D01C6A2221F7}&quot; zone-id=&quot;28&quot; zone-ids=[13]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <simple-id uuid='{E95A98D4-DDCD-4DE4-93F0-26F82B9252E9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Accidents by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{82092F50-C2AE-4C30-A425-F087612544E8}' />
+    </window>
+    <window class='worksheet' name='Accidents by Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A6B721DA-13B5-481E-8FEE-45E610102C3E}' />
+    </window>
+    <window class='worksheet' name='Age vs Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[__tableau_internal_object_id__].[cnt:Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96254153-D805-4FEE-9DF3-56AF1FE4ED79}' />
+    </window>
+    <window class='worksheet' name='Total Accidents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{681F4734-D711-4B74-A673-DA88535B6AA9}' />
+    </window>
+    <window class='worksheet' name='Accidents by Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Gender:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weekday:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Weather Condition:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Surface Condition:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Helmet Damage:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Ethnicity:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0ntl0jk1qfwi4h17gon110n42s2r].[none:Crash Severity:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7381DEBD-F721-41F9-9CA7-9C392BCEB6E6}' />
+    </window>
+    <window class='worksheet' name='Death by year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E261C0E-1FAE-4767-BA90-D5B1949FD4DB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Accidents by Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Accidents by Quarter'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Accidents by Speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Age vs Speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Death by year' />
+        <viewpoint name='Total Accidents'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0EE8834E-1629-43EF-B83B-D01C6A2221F7}' />
+    </window>
+  </windows>
+</workbook>
