@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20251.25.0415.1018                               -->
-<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xml:base='https://haproxy-traffic-splitter' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -19,7 +19,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents?rev=1.0' id='BI_assignment_dashboard' path='/workbooks' revision='1.0' />
+  <repository-location derived-from='https://localhost/workbooks/NLTInt-WorkingwithContainers-AustinBikeAccidents?rev=1.0' id='new_dashboard_ogabek_razzoqov' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -413,11 +413,8 @@
       <column-instance column='[Date/Time]' derivation='Quarter-Trunc' name='[tqr:Date/Time:ok]' pivot='key' type='ordinal' />
       <column-instance column='[Date/Time]' derivation='Year' name='[yr:Date/Time:ok]' pivot='key' type='ordinal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/tableau-temp/TEMP_0pakap40eeolei1h8h62q0tycqqt.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/07/2024 02:21:09 PM' username=''>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/tableau-temp/TEMP_0pakap40eeolei1h8h62q0tycqqt.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='Accidents (Austin Bike Accidents)' increment-value='%null%' refresh-type='create' rows-inserted='2063' timestamp-start='2024-11-07 14:21:09.345' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>Crash ID</remote-name>
@@ -432,7 +429,6 @@
               <approx-count>1877</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Date/Time</remote-name>
@@ -446,7 +442,6 @@
               <aggregation>Year</aggregation>
               <approx-count>1877</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Helmet Damage</remote-name>
@@ -461,7 +456,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Ethnicity</remote-name>
@@ -476,7 +470,6 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Weather Condition</remote-name>
@@ -491,7 +484,6 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Active School Zone</remote-name>
@@ -506,7 +498,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>At Intersection</remote-name>
@@ -520,7 +511,6 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Crash Severity</remote-name>
@@ -535,7 +525,6 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Weekday</remote-name>
@@ -550,7 +539,6 @@
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Latitude</remote-name>
@@ -564,7 +552,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1249</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Longitude</remote-name>
@@ -578,7 +565,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1239</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Speed Limit</remote-name>
@@ -592,7 +578,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Surface Condition</remote-name>
@@ -607,7 +592,6 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Charge</remote-name>
@@ -622,7 +606,6 @@
               <approx-count>80</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Person Age</remote-name>
@@ -636,7 +619,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>75</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gender</remote-name>
@@ -651,7 +633,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Deaths</remote-name>
@@ -665,7 +646,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Not Injured</remote-name>
@@ -679,7 +659,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Injuries</remote-name>
@@ -693,7 +672,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Accidents_1FC6E9959B8D47269E548B4ACCDA4B4D]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1802,11 +1780,11 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone fixed-size='32' h='5000' id='30' is-fixed='true' type-v2='text' w='15938' x='83374' y='90624'>
+              <zone fixed-size='32' forceUpdate='true' h='5000' id='30' is-fixed='true' type-v2='text' w='15938' x='83374' y='90624'>
                 <formatted-text>
                   <run fontcolor='#898989' fontsize='8'>Data Source: City of Austin</run>
                   <run>Æ&#10;</run>
-                  <run fontcolor='#898989' fontsize='8'>Created by: Next-Level Tableau</run>
+                  <run fontcolor='#898989' fontsize='8'>Created by: Palonziy</run>
                 </formatted-text>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2024,7 +2002,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='30' />
       <simple-id uuid='{0EE8834E-1629-43EF-B83B-D01C6A2221F7}' />
     </window>
   </windows>
